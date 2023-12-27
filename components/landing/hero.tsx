@@ -12,7 +12,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const Hero = () => {
    return (
-      <div className='z-0'>
+      <div className='z-0 sm:mt-0 mt-12'>
          <Carousel opts={{
             align: "start",
             loop: true,
@@ -33,13 +33,13 @@ const Hero = () => {
                         </video>
                         {/* Add a black overlay with text */}
                         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center justify-center 
-                        text-white animate-fade-in uppercase">
+                        text-white animate-fade-in uppercase sm:mt-0 mt-4">
                            <Fade
                               direction="up"
                               duration={1000}
                               cascade>
                               <p className='text-md '>{item.welcomeText}</p>
-                              <h2 className="sm:text-4xl text-md font-bold mb-2 w-full mx-auto text-center py-3">{item.text}</h2>
+                              <h2 className="sm:text-4xl text-md font-bold mb-2 w-full mx-auto text-center sm:py-3 py-1">{item.text}</h2>
                               <Button variant="secondary" size={"lg"}>{item.buttonText}</Button>
                            </Fade>
 
