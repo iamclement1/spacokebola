@@ -12,7 +12,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const Hero = () => {
    return (
-      <div className='z-0 sm:mt-0 mt-12'>
+      <div className=' sm:mt-0 mt-12'>
          <Carousel opts={{
             align: "start",
             loop: true,
@@ -38,8 +38,8 @@ const Hero = () => {
                               direction="up"
                               duration={1000}
                               cascade>
-                              <p className='text-md '>{item.welcomeText}</p>
-                              <h2 className="sm:text-4xl text-md font-bold mb-2 w-full mx-auto text-center sm:py-3 py-1">{item.text}</h2>
+                              <p className='sm:text-md text-xs'>{item.welcomeText}</p>
+                              <h2 className="sm:text-4xl text-sm font-bold mb-2 w-full mx-auto text-center sm:py-3 py-1">{item.text}</h2>
                               <Button variant="secondary" size={"lg"}>{item.buttonText}</Button>
                            </Fade>
 
@@ -48,8 +48,8 @@ const Hero = () => {
                   </CarouselItem>
                ))}
             </CarouselContent>
-            <CarouselPrevious className="z-50" />
-            <CarouselNext className="z-50" />
+            {/* <CarouselPrevious />
+            <CarouselNext /> */}
          </Carousel>
       </div>
    );
