@@ -8,7 +8,9 @@ const Footer = () => {
          <section className='grid sm:grid-cols-3'>
             <div>
                <div className='flex flex-col justify-center'>
-                  <h1 className='font-bold text-xl'>St Paul's Anglican Church</h1>
+                  <h1 className='font-bold text-xl'>
+                     {"St Paul's Anglican Church"}
+                  </h1>
                   <span className='text-sm '>{"(The Action Place of the Holy Spirit)"}</span>
                   <span className='text-xs'>7 Koyejo Street, Oke Bola, Ibadan.</span>
 
