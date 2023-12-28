@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { routes } from "@/lib/data";
 import { CiMenuFries } from "react-icons/ci";
+import { usePathname } from "next/navigation";
 
 
 const Header = () => {
@@ -54,9 +55,12 @@ const Header = () => {
       };
    }, [scrollThreshold]);
 
+   const pathname = usePathname()
+
 
    return (
-      <header className={`fixed top-0 z-50 w-full ${scrolled ? 'bg-white text-black' : 'bg-transparent text-white'} py-3 px-4`}>
+      <header className={`fixed top-0 z-50 w-full ${pathname === '/' && !scrolled ? 'bg-transparent text-white' : 'bg-white text-black'} py-3 px-4`}>
+
          <Container>
             <div className="relative flex h-16 items-center justify-between" ref={heroRef}>
                <div className="flex items-center">
@@ -80,10 +84,10 @@ const Header = () => {
                      </Button>
                   ))}
                </nav>
-               <div className="flex items-center h-6 md:hidden w-6">
+               <div className="flex items-center">
                   <Sheet>
                      <SheetTrigger>
-                        <CiMenuFries lassName="h-6 md:hidden w-6" />
+                        <CiMenuFries className="h-6 md:hidden w-6" />
                      </SheetTrigger>
                      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
                         <nav className="flex flex-col gap-4">

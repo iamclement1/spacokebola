@@ -4,6 +4,8 @@ import './globals.css'
 import { RootLayoutProps } from '@/lib/types';
 import Footer from '@/components/common/footer';
 import Header from '@/components/common/header';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,12 +19,12 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      type: "image/png",
-      url: "./img/SPAC-LOGO.png",
+      type: "image/ico",
+      url: "/favicon.ico",
     },
     {
       rel: "apple",
-      url: "./icon.png",
+      url: "/favicon.ico",
     },
   ],
 };

@@ -7,7 +7,7 @@ import { Fade } from 'react-awesome-reveal'
 const AboutHero = () => {
    return (
       <Container>
-         <section className='sm:my-24 grid sm:grid-cols-2 gap-8 items-center sm:px-0 px-4'>
+         <section className='sm:my-24 grid sm:grid-cols-2 gap-8 items-center sm:px-5 px-4'>
             <Fade direction='up' cascade>
                <div>
                   <h1 className='font-bold sm:text-2xl text-sm sm:w-7/12 opacity-80'>
