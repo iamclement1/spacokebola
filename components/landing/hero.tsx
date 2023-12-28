@@ -1,11 +1,10 @@
 'use client';
+import { carouselData } from '@/lib/data';
 import { Button } from '../ui/button';
 import {
    Carousel,
    CarouselContent,
    CarouselItem,
-   CarouselNext,
-   CarouselPrevious
 } from '../ui/carousel';
 import { Fade } from 'react-awesome-reveal';
 
@@ -56,24 +55,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-// Sample data for carousel items
-const carouselData = [
-   {
-      id: 1,
-      videoPath: '/video/curate_carousel.mp4',
-      welcomeText: "Welcome To",
-      text: "St Pauls' Anglican Church, Ibadan",
-      buttonText: 'Visit Us',
-   },
-   {
-      id: 2,
-      videoPath: '/video/spac_carousel1.mp4',
-      text: 'Overlay Text 2',
-      buttonText: 'Book a Session',
-   },
-   // Add more items as needed
-];

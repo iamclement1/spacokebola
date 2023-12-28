@@ -40,10 +40,10 @@ const Navbar = () => {
                      </Button>
                   ))}
                </nav>
-               <div className="flex items-center h-6 md:hidden w-6">
+               <div className="flex items-center">
                   <Sheet>
                      <SheetTrigger>
-                        <CiMenuFries lassName="h-6 md:hidden w-6" />
+                        <CiMenuFries className="h-6 md:hidden w-6" />
                      </SheetTrigger>
                      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
                         <nav className="flex flex-col gap-4">
